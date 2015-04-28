@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[Angus' Home]]></title>
-  
+  <subtitle><![CDATA[U Can U BB]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://angus.me/"/>
   <updated>2015-04-28T02:27:06.000Z</updated>
