@@ -399,7 +399,7 @@ body >header >div {
 }
 body >header a {
   display: block;
-  color: color-green;
+  color: #fff;
 }
 #imglogo {
   float: left;
