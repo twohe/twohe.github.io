@@ -4,25 +4,55 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | Angus&#39; Home</title>
+    <title>xcode5时代如何设置Architectures和Valid Architectures | Angus&#39; Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Angus Dai">
     
 
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="description" content="官方
+参考1参考2
+
+目前ios的指令集有以下几种
+
+armv6,支持的机器iPhone,iPhone2,iPhone3G及对应的iTouch
+armv7,支持的机器iPhone4,iPhone4S
+armv7s,支持的机器iPhone5,iPhone5C
+arm64，支持的机器：iPhone5S
+
+
+机器对指令集的支持是向下兼容的，因此armv7的指令集是可以运行在iphone5S的，只是效率没">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://blog.angus.me/2015/06/26/hello-world/index.html">
+<meta property="og:title" content="xcode5时代如何设置Architectures和Valid Architectures">
+<meta property="og:url" content="http://blog.angus.me/2014/04/24/xcode5时代如何设置architectures和valid-architectures/index.html">
 <meta property="og:site_name" content="Angus' Home">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta property="og:description" content="官方
+参考1参考2
+
+目前ios的指令集有以下几种
+
+armv6,支持的机器iPhone,iPhone2,iPhone3G及对应的iTouch
+armv7,支持的机器iPhone4,iPhone4S
+armv7s,支持的机器iPhone5,iPhone5C
+arm64，支持的机器：iPhone5S
+
+
+机器对指令集的支持是向下兼容的，因此armv7的指令集是可以运行在iphone5S的，只是效率没">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="xcode5时代如何设置Architectures和Valid Architectures">
+<meta name="twitter:description" content="官方
+参考1参考2
+
+目前ios的指令集有以下几种
+
+armv6,支持的机器iPhone,iPhone2,iPhone3G及对应的iTouch
+armv7,支持的机器iPhone4,iPhone4S
+armv7s,支持的机器iPhone5,iPhone5C
+arm64，支持的机器：iPhone5S
+
+
+机器对指令集的支持是向下兼容的，因此armv7的指令集是可以运行在iphone5S的，只是效率没">
 
     
     <link rel="alternative" href="/atom.xml" title="Angus&#39; Home" type="application/atom+xml">
@@ -87,14 +117,14 @@ Quick">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/06/26/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2014/04/24/xcode5时代如何设置architectures和valid-architectures/" title="xcode5时代如何设置Architectures和Valid Architectures" itemprop="url">xcode5时代如何设置Architectures和Valid Architectures</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Angus Dai" target="_blank" itemprop="author">Angus Dai</a>
 		
   <p class="article-time">
-    <time datetime="2015-06-26T07:17:29.000Z" itemprop="datePublished"> 发表于 2015-06-26</time>
+    <time datetime="2014-04-24T01:19:09.000Z" itemprop="datePublished"> 发表于 2014-04-24</time>
     
   </p>
 </header>
@@ -103,24 +133,46 @@ Quick">
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#官方"><span class="toc-number">1.</span> <span class="toc-text">官方</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目前ios的指令集有以下几种"><span class="toc-number"></span> <span class="toc-text">目前ios的指令集有以下几种</span></a>
 		
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<h3 id="官方">官方</h3><blockquote>
+<p><a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/Introduction/Introduction.html" target="_blank" rel="external">参考1</a><br><a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/OptimizingMemoryPerformance/OptimizingMemoryPerformance.html#//apple_ref/doc/uid/TP40013501-CH4-SW1" target="_blank" rel="external">参考2</a></p>
+</blockquote>
+<h2 id="目前ios的指令集有以下几种">目前ios的指令集有以下几种</h2><blockquote>
+<ol>
+<li>armv6,支持的机器iPhone,iPhone2,iPhone3G及对应的iTouch</li>
+<li>armv7,支持的机器iPhone4,iPhone4S</li>
+<li>armv7s,支持的机器iPhone5,iPhone5C</li>
+<li>arm64，支持的机器：iPhone5S</li>
+</ol>
+</blockquote>
+<p>机器对指令集的支持是向下兼容的，因此armv7的指令集是可以运行在iphone5S的，只是效率没那么高而已~</p>
+<a id="more"></a>
+<hr>
+<blockquote>
+<p><code>Architecture</code> ： 指你想支持的指令集。<br><code>Valid architectures</code> : 指即将编译的指令集。<br><code>Build Active Architecture Only</code> : 只是否只编译当前适用的指令集。</p>
+</blockquote>
+<hr>
+<p>现在是2014年初，其实4和4S的用户还是蛮多的，而iphone3之类的机器几乎没有了，所以我们的指令集最低必须基于armv7.<br>因此,Architecture的值选择：armv7 armv7s arm64(选arm64时需要最低支持5.1.1，这块不太明白）</p>
+<blockquote>
+<ol>
+<li>如果想自己的app在各个机器都能够最高效率的运行，则需要将Build Active Architecture Only改为NO,Valid architectures选择对应的指令集：armv7 armv7s arm64。这个会为各个指令集编译对应的代码，因此最后的 ipa体积基本翻了3倍。（如果不在乎app大小的话，应该这样做）</li>
+<li>如果想让app体积保持最小，则现阶段应该选择Valid architectures为armv7,这样Build Active Architecture Only选YES或NO就无所谓了。`</li>
+</ol>
+</blockquote>
+<p><a href="http://www.cnblogs.com/Gukw/p/3530340.html" target="_blank" rel="external">本文源链接1</a><br><a href="http://justsee.iteye.com/blog/2009954" target="_blank" rel="external">本文源链接2</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/copy/">copy</a><a href="/tags/ios/">ios</a>
+  </div>
 
 </div>
 
@@ -128,7 +180,7 @@ Quick">
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://blog.angus.me/2015/06/26/hello-world/" data-title="Hello World | Angus&#39; Home" data-tsina="1718246425" class="share clearfix">
+	  <div data-url="http://blog.angus.me/2014/04/24/xcode5时代如何设置architectures和valid-architectures/" data-title="xcode5时代如何设置Architectures和Valid Architectures | Angus&#39; Home" data-tsina="1718246425" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -141,11 +193,19 @@ Quick">
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2014/04/24/spring-goes/" title="Spring Goes">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Spring Goes</span>
+</a>
+</div>
+
 
 <div class="next">
-<a href="/2014/04/24/spring-goes/"  title="Spring Goes">
+<a href="/2014/03/09/2014-03-09-求职/"  title="求职">
  <strong>下一篇：</strong><br/> 
- <span>Spring Goes
+ <span>求职
 </span>
 </a>
 </div>
@@ -154,7 +214,7 @@ Quick">
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/06/26/hello-world/" data-title="Hello World" data-url="http://blog.angus.me/2015/06/26/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="2014/04/24/xcode5时代如何设置architectures和valid-architectures/" data-title="xcode5时代如何设置Architectures和Valid Architectures" data-url="http://blog.angus.me/2014/04/24/xcode5时代如何设置architectures和valid-architectures/"></div>
 </section>
 
 
@@ -164,7 +224,7 @@ Quick">
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#官方"><span class="toc-number">1.</span> <span class="toc-text">官方</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目前ios的指令集有以下几种"><span class="toc-number"></span> <span class="toc-text">目前ios的指令集有以下几种</span></a>
  
   </div>
 

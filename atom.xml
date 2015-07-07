@@ -36,4 +36,292 @@
     
   </entry>
   
+  <entry>
+    <title><![CDATA[Spring Goes]]></title>
+    <link href="http://blog.angus.me/2014/04/24/spring-goes/"/>
+    <id>http://blog.angus.me/2014/04/24/spring-goes/</id>
+    <published>2014-04-24T02:33:44.000Z</published>
+    <updated>2014-04-23T11:43:40.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>Though time running away,I only care about you</p>
+</blockquote>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>Though time running away,I only care about you</p>
+</blockquote>]]>
+    
+    </summary>
+    
+      <category term="life" scheme="http://blog.angus.me/tags/life/"/>
+    
+      <category term="photo" scheme="http://blog.angus.me/tags/photo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[xcode5时代如何设置Architectures和Valid Architectures]]></title>
+    <link href="http://blog.angus.me/2014/04/24/xcode5%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AEarchitectures%E5%92%8Cvalid-architectures/"/>
+    <id>http://blog.angus.me/2014/04/24/xcode5时代如何设置architectures和valid-architectures/</id>
+    <published>2014-04-24T01:19:09.000Z</published>
+    <updated>2014-04-23T12:00:02.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="官方">官方</h3><blockquote>
+<p><a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/Introduction/Introduction.html" target="_blank" rel="external">参考1</a><br><a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/OptimizingMemoryPerformance/OptimizingMemoryPerformance.html#//apple_ref/doc/uid/TP40013501-CH4-SW1" target="_blank" rel="external">参考2</a></p>
+</blockquote>
+<h2 id="目前ios的指令集有以下几种">目前ios的指令集有以下几种</h2><blockquote>
+<ol>
+<li>armv6,支持的机器iPhone,iPhone2,iPhone3G及对应的iTouch</li>
+<li>armv7,支持的机器iPhone4,iPhone4S</li>
+<li>armv7s,支持的机器iPhone5,iPhone5C</li>
+<li>arm64，支持的机器：iPhone5S</li>
+</ol>
+</blockquote>
+<p>机器对指令集的支持是向下兼容的，因此armv7的指令集是可以运行在iphone5S的，只是效率没那么高而已~</p>
+<a id="more"></a>
+<hr>
+<blockquote>
+<p><code>Architecture</code> ： 指你想支持的指令集。<br><code>Valid architectures</code> : 指即将编译的指令集。<br><code>Build Active Architecture Only</code> : 只是否只编译当前适用的指令集。</p>
+</blockquote>
+<hr>
+<p>现在是2014年初，其实4和4S的用户还是蛮多的，而iphone3之类的机器几乎没有了，所以我们的指令集最低必须基于armv7.<br>因此,Architecture的值选择：armv7 armv7s arm64(选arm64时需要最低支持5.1.1，这块不太明白）</p>
+<blockquote>
+<ol>
+<li>如果想自己的app在各个机器都能够最高效率的运行，则需要将Build Active Architecture Only改为NO,Valid architectures选择对应的指令集：armv7 armv7s arm64。这个会为各个指令集编译对应的代码，因此最后的 ipa体积基本翻了3倍。（如果不在乎app大小的话，应该这样做）</li>
+<li>如果想让app体积保持最小，则现阶段应该选择Valid architectures为armv7,这样Build Active Architecture Only选YES或NO就无所谓了。`</li>
+</ol>
+</blockquote>
+<p><a href="http://www.cnblogs.com/Gukw/p/3530340.html" target="_blank" rel="external">本文源链接1</a><br><a href="http://justsee.iteye.com/blog/2009954" target="_blank" rel="external">本文源链接2</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="官方">官方</h3><blockquote>
+<p><a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/Introduction/Introduction.html">参考1</a><br><a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/OptimizingMemoryPerformance/OptimizingMemoryPerformance.html#//apple_ref/doc/uid/TP40013501-CH4-SW1">参考2</a></p>
+</blockquote>
+<h2 id="目前ios的指令集有以下几种">目前ios的指令集有以下几种</h2><blockquote>
+<ol>
+<li>armv6,支持的机器iPhone,iPhone2,iPhone3G及对应的iTouch</li>
+<li>armv7,支持的机器iPhone4,iPhone4S</li>
+<li>armv7s,支持的机器iPhone5,iPhone5C</li>
+<li>arm64，支持的机器：iPhone5S</li>
+</ol>
+</blockquote>
+<p>机器对指令集的支持是向下兼容的，因此armv7的指令集是可以运行在iphone5S的，只是效率没那么高而已~</p>]]>
+    
+    </summary>
+    
+      <category term="copy" scheme="http://blog.angus.me/tags/copy/"/>
+    
+      <category term="ios" scheme="http://blog.angus.me/tags/ios/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[求职]]></title>
+    <link href="http://blog.angus.me/2014/03/09/2014-03-09-%E6%B1%82%E8%81%8C/"/>
+    <id>http://blog.angus.me/2014/03/09/2014-03-09-求职/</id>
+    <published>2014-03-08T16:00:00.000Z</published>
+    <updated>2014-04-01T17:08:48.000Z</updated>
+    <content type="html"><![CDATA[<p><code>一周完成flapp bird,SaveMoney第一部分</code></p>
+<hr>
+<p>缓冲可能慢了点………<br><a href="http://v.youku.com/v_show/id_XNjgyNzkzMzAw.html" target="_blank" rel="external">到youku看</a></p>
+<h2 id="<!-_more_->"><a id="more"></a></h2><h3 id="Flappy_Bird_-_Sprite_Kit">Flappy Bird - Sprite Kit</h3><p>仿制Flappy Bird      </p>
+<p><video width="320" height="480" src="/media/video/bird.webm" autoloop="" loop controls></video>    </p>
+<h2 id="游戏简单,没什么好介绍的-">游戏简单,没什么好介绍的.</h2><p><a href="https://github.com/twohe/FlappBird-Sprite-Kit" target="_blank" rel="external">这里到我的git</a>    </p>
+<hr>
+<h3 id="SaveMoney(理财类app)">SaveMoney(理财类app)</h3><p><video width="320" height="480" src="/media/video/savemoney.webm" autoloop="" loop controls></video><br>集成使用了ShareSKD社会化分享<br>使用FMDB构建SqlLite数据库<br>应用整体基于自定义类似Mac的Dock栏<br>已完成功能:<br>1.数据库的构建与读写存储实现<br>2.应用首次运行的新特性界面,分享按钮与进入应用<br>3.UIView动画绘制主页图表<br>4.各界面间modal push跳转及数据传递<br>5.UITableViewCell的自定义<br>6.plist文件读写<br>7.DatePick的使用<br>8.NSNotification的使用,键盘弹出隐藏的使用<br>9.适配3.5/4.0-inch    </p>
+<h2 id="git链接"><a href="https://github.com/twohe/SaveMoney" target="_blank" rel="external">git链接</a>    </h2><p><code>mail: intro2db@gmail.com</code></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><code>一周完成flapp bird,SaveMoney第一部分</code></p>
+<hr>
+<p>缓冲可能慢了点………<br><a href="http://v.youku.com/v_show/id_XNjgyNzkzMzAw.html">到youku看</a></p>
+<h2 id="<!-_more_->">]]>
+    
+    </summary>
+    
+      <category term="Sprite Kit" scheme="http://blog.angus.me/tags/Sprite-Kit/"/>
+    
+      <category term="ios" scheme="http://blog.angus.me/tags/ios/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[將頁面升級到HTML5]]></title>
+    <link href="http://blog.angus.me/2013/12/17/2013-12-17-update+to+HTML5/"/>
+    <id>http://blog.angus.me/2013/12/17/2013-12-17-update+to+HTML5/</id>
+    <published>2013-12-16T16:00:00.000Z</published>
+    <updated>2014-04-01T17:19:28.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="STEP_1">STEP 1</h3><p><em>HTML4.01</em>    </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;!DOCTYPE html PUBLIC &#34;-//W3C//DTD HTML 4.01//EN&#34; &#34;http://www.w3.org/TR/html4/strict.dtd&#34;&#62;</span><br></pre></td></tr></table></figure>
+<p><em>HTML5</em><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;!doctype html&#62;</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p><em>Not only is this the doctype for HTML5, it’s the doctype for every future version of HTML. In other words, it’s never going to change again. Not only that, it will work in your older browsers too.</em></p>
+<hr>
+<h3 id="STEP_2">STEP 2</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=UTF-8&#34;&#62; &#60;meta charset=&#34;utf-8&#34;&#62;</span><br></pre></td></tr></table></figure>
+<p>change to<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;meta charset=&#34;utf-8&#34;&#62;</span><br></pre></td></tr></table></figure></p>
+<p><em>When you specify the meta tag in HTML5, just supply the tag along with a character encoding. Believe it or not, all browsers (old and new) already understand this meta description, so you can use it on any page and it just works.</em></p>
+<hr>
+<h3 id="STEP_3">STEP 3</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;link type=&#34;text/css&#34; rel=&#34;stylesheet&#34; href=&#34;lounge.css&#34;&#62;</span><br></pre></td></tr></table></figure>
+<p><em>To upgrade this for HTML5, we just need to remove the type attribute.Why? Because CSS has been declared the standard, and default, style for HTML5. So, after we remove the type attribute, the new link looks like this:</em><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;link rel=&#34;stylesheet&#34; href=&#34;lounge.css&#34;&#62;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="BOUNS">BOUNS</h3><p><em>With HTML5, JavaScript is now the standard and default scripting language, so you can remove the type attribute from your script tags too. Here’s what the new script tag looks like without the type attribute:</em><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;script src=&#34;lounge.js&#34;&#62;&#60;/script&#62;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;script&#62;&#10;var youRock = true;&#10;&#60;/script&#62;</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[將頁面升級到HTML5]]>
+    
+    </summary>
+    
+      <category term="HTML5" scheme="http://blog.angus.me/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Sublime Text插件]]></title>
+    <link href="http://blog.angus.me/2013/12/17/2013-12-17-about+Sublime+Text/"/>
+    <id>http://blog.angus.me/2013/12/17/2013-12-17-about+Sublime+Text/</id>
+    <published>2013-12-16T16:00:00.000Z</published>
+    <updated>2014-04-01T16:42:36.000Z</updated>
+    <content type="html"><![CDATA[<p>1.Package Control<br><a href="https://sublime.wbond.net/installation" target="_blank" rel="external">link</a><br>在此站點可以搜尋到所有可以通過Package Control安裝的ST插件<br><code>control+` </code>調出Console,copy以下回車即可安裝<br><a id="more"></a>    </p>
+<blockquote>
+<p>import urllib.request,os; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), ‘wb’).write(urllib.request.urlopen( ‘<a href="http://sublime.wbond.net/" target="_blank" rel="external">http://sublime.wbond.net/</a>‘ + pf.replace(‘ ‘,’%20’)).read())    </p>
+</blockquote>
+<hr>
+<p>2.DocBlockr<br>符合導出註釋文檔的插件<br>輸入/**回車即可根據下方內容生成相應地註釋<br><img src="/media/files/2013/12/16/DocBlockr.png" alt="Sublime text插件" title="DocBlockr"></p>
+<hr>
+<p>3.Alignment<br>格式化代碼<br>選中需要格式的代碼<br><code>control+command+a</code><br><img src="/media/files/2013/12/16/Alignment.png" alt="Sublime text插件" title="Alignment"></p>
+<hr>
+<p>4.Pretty Json<br><code>control+command+j</code><br><img src="/media/files/2013/12/16/PrettyJson.png" alt="Sublime text插件" title="PrettyJson">       </p>
+<hr>
+<p>5.JsFormat<br>格式化js代碼<br><code>control+option+f</code></p>
+<hr>
+<p>6.HTML5<br>增加html5標籤</p>
+<hr>
+<p>7.SideBarEnhancements<br>ST的側邊欄右鍵拓展</p>
+<hr>
+<p>8.Emmet<br>Zen Coding         </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[Sublime text編輯器,Sublime text插件]]>
+    
+    </summary>
+    
+      <category term="Alignment" scheme="http://blog.angus.me/tags/Alignment/"/>
+    
+      <category term="DocBlockr" scheme="http://blog.angus.me/tags/DocBlockr/"/>
+    
+      <category term="Emmet" scheme="http://blog.angus.me/tags/Emmet/"/>
+    
+      <category term="HTML5" scheme="http://blog.angus.me/tags/HTML5/"/>
+    
+      <category term="JsFormat" scheme="http://blog.angus.me/tags/JsFormat/"/>
+    
+      <category term="Pretty Json" scheme="http://blog.angus.me/tags/Pretty-Json/"/>
+    
+      <category term="ST" scheme="http://blog.angus.me/tags/ST/"/>
+    
+      <category term="SideBarEnhancements" scheme="http://blog.angus.me/tags/SideBarEnhancements/"/>
+    
+      <category term="edit" scheme="http://blog.angus.me/tags/edit/"/>
+    
+      <category term="tool" scheme="http://blog.angus.me/tags/tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[检测API是否提供的方法]]></title>
+    <link href="http://blog.angus.me/2013/11/28/2013-11-28-%E6%A3%80%E6%B5%8BAPI%E6%98%AF%E5%90%A6%E6%8F%90%E4%BE%9B%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://blog.angus.me/2013/11/28/2013-11-28-检测API是否提供的方法/</id>
+    <published>2013-11-27T16:00:00.000Z</published>
+    <updated>2014-04-01T16:39:58.000Z</updated>
+    <content type="html"><![CDATA[<p>from Apple <a href="https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/cross_development/cross_development.pdf" target="_blank" rel="external">SDK Compatibility Guide</a> page 15</p>
+<hr>
+<p>Listing 3-2 Checking the availability of a C function</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if (CGColorCreateGenericCMYK != NULL) &#123;&#10;&#9;CGColorCreateGenericCMYK (0.1,0.5.0.0,1.0,0.1);&#10;&#125; else &#123;&#10;&#9;// Function is not available.&#10;&#9;// Alternate code to create a color object with earlier technology&#10;&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<hr>
+<p>Note: To check the availability of a function, explicitly compare its address to NULL or nil. You<br>cannot use the negation operator ( ! ) to negate the address of a function to check its availability.<br>Also, note that the name of a C function is synonymous with its address. That is, &amp;myFunction is equivalent to myFunction.</p>
+<hr>
+<p>Check the availability of an external (extern) constant or a notification name by explicitly comparing its<br>address—and not the symbol’s bare name—to NULL or nil</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[一种检测API是否提供的方法]]>
+    
+    </summary>
+    
+      <category term="API" scheme="http://blog.angus.me/tags/API/"/>
+    
+      <category term="ios" scheme="http://blog.angus.me/tags/ios/"/>
+    
+      <category term="oc" scheme="http://blog.angus.me/tags/oc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[mac下导出.ico]]></title>
+    <link href="http://blog.angus.me/2013/11/27/2013-11-27-mac%E4%B8%8B%E5%AF%BC%E5%87%BA.ico/"/>
+    <id>http://blog.angus.me/2013/11/27/2013-11-27-mac下导出.ico/</id>
+    <published>2013-11-26T16:00:00.000Z</published>
+    <updated>2014-04-23T11:16:22.000Z</updated>
+    <content type="html"><![CDATA[<p><strong>对于偶尔需要一个icon的人来说</strong></p>
+<p>推荐的方式   </p>
+<ol>
+<li>基于flash的站点<a href="http://www.converticon.com" target="_blank" rel="external">convertion.com</a>在线导出为.ico<br>可以将ICO, PNG, GIF, and JPEG 导出为 PNG 或 ICO 并具备多个像素大小选择.<br>2.<blockquote>
+<p>brew install png2ico<br>png2ico favicon.ico twohe.png #生成favicon.ico   </p>
+</blockquote>
+</li>
+</ol>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[在mac下制作icon图标]]>
+    
+    </summary>
+    
+      <category term="icon" scheme="http://blog.angus.me/tags/icon/"/>
+    
+      <category term="picture" scheme="http://blog.angus.me/tags/picture/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[开天辟地第一篇]]></title>
+    <link href="http://blog.angus.me/2013/11/26/2013-11-26-%E5%BC%80%E5%A4%A9%E8%BE%9F%E5%9C%B0%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
+    <id>http://blog.angus.me/2013/11/26/2013-11-26-开天辟地第一篇/</id>
+    <published>2013-11-25T16:00:00.000Z</published>
+    <updated>2014-04-23T11:16:28.000Z</updated>
+    <content type="html"><![CDATA[<p><strong>Hello, 很高兴认识你</strong></p>
+<hr>
+<p>几天零零碎碎<br>最初使用WordPress很快搭好了一个博客<br>立马看到了叫jekyll的东西<br>刻意去看了经常看的博客的注脚,又发现了Octopress和jekyllbootstrap<br>前前后后都尝试了,最终使用了jekyll<br>其实,都差不太多,后两者都是基于jekyll</p>
+<hr>
+<p>另外,发现一个国产<a href="http://www.farbox.com" target="_blank" rel="external">farbox</a>.觉得不错,推给大家</p>
+<hr>
+<p>刚刚,爱基与朕讲其失恋被抛弃<br>朕赐一句与他也与你:</p>
+<blockquote>
+<p>不问世事,与技术相依为命;看破红尘,同电脑白头偕老</p>
+</blockquote>
+<p>PS,他又加个了横批:屌注孤</p>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><strong>Hello, 很高兴认识你</strong></p>
+<hr>
+<p>几天零零碎碎<br>最初使用WordPress很快搭好了一个博客<br>立马看到了叫jekyll的东西<br>刻意去看了经常看的博客的注脚,又发现了Octopress和jekyllbootstrap<br>前前后后都尝试了,最终使用了jekyll<br>其实,都差不太多,后两者都是基于jekyll</p>
+<hr>
+<p>另外,发现一个国产<a href="http://www.farbox.com">farbox</a>.觉得不错,推给大家</p>
+<hr>
+<p>刚刚,爱基与朕讲其失恋被抛弃<br>朕赐一句与他也与你:</p>
+<blockquote>
+<p>不问世事,与技术相依为命;看破红尘,同电脑白头偕老</p>
+</blockquote>
+<p>PS,他又加个了横批:屌注孤</p>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="http://blog.angus.me/tags/diary/"/>
+    
+      <category term="notes" scheme="http://blog.angus.me/tags/notes/"/>
+    
+  </entry>
+  
 </feed>
